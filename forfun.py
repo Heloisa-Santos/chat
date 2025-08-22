@@ -8,7 +8,7 @@ from flask_cors import CORS
 load_dotenv()
 
 api_key = os.getenv("API_KEY")
-co = cohere.ClientV2("Sqp4Wv2PEpmq7H1yJAkmDqhham3cTFlT1DmDYir5")
+co = cohere.ClientV2(api_key)
 
 
 def chat_with_cohere(prompt, message):
